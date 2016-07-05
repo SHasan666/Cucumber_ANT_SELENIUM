@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="2" tests="6" time="17.552672">
+<testcase classname="Test Facebook Login" name="Test login with valid cred" time="0.108702">
+<skipped><![CDATA[Given Runmode is "N"........................................................pending
+Given Open "Mozilla" and go to "testSitebaseURL"............................skipped
+When I enter valid "sakib@gmail.com" and valid "1234".......................skipped
+And I click on "loginButton" button.........................................skipped
+Then Login should be "Fail".................................................skipped
+]]></skipped>
+</testcase>
+<testcase classname="Test Facebook Login" name="Test login with valid cred 2" time="0.000345">
+<skipped><![CDATA[Given Runmode is "N"........................................................pending
+Given Open "Mozilla" and go to "testSitebaseURL"............................skipped
+When I enter valid "zerin@gmail.com" and valid "12345555"...................skipped
+And I click on "loginButton" button.........................................skipped
+Then Login should be "Success"..............................................skipped
+]]></skipped>
+</testcase>
+<testcase classname="Test Facebook Login" name="Test login with valid cred 3" time="16.048424">
+<system-out><![CDATA[Given Runmode is "Y"........................................................passed
+Given Open "Mozilla" and go to "testSitebaseURL"............................passed
+When I enter valid "seleniumsakib@gmail.com" and valid "sakib1234"..........passed
+And I click on "loginButton" button.........................................passed
+Then Login should be "Success"..............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Home Page Test" name="Test profile and home button" time="1.112852">
+<system-out><![CDATA[Given I am logged in facebook with Mozilla..................................passed
+Then "profilelink" should be present........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Home Page Test" name="Test profile and home button 2" time="0.127946">
+<system-out><![CDATA[Given I am logged in facebook with Mozilla..................................passed
+Then "homelink" should be present...........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Home Page Test" name="Test title" time="0.154403">
+<system-out><![CDATA[Given I am logged in facebook with Mozilla..................................passed
+Then title should be "Facebook".............................................passed
+]]></system-out>
+</testcase>
+</testsuite>

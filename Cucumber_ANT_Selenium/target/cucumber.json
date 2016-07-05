@@ -1,0 +1,753 @@
+[
+  {
+    "comments": [
+      {
+        "line": 1,
+        "value": "#Author: your.email@your.domain.com"
+      }
+    ],
+    "line": 3,
+    "elements": [
+      {
+        "line": 20,
+        "name": "Test login with valid cred",
+        "description": "",
+        "id": "test-facebook-login;test-login-with-valid-cred;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 179219,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Login_Step.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 108522337,
+              "error_message": "cucumber.api.PendingException: Skipping the test as Runmode is No\r\n\tat com.van.stepDefination.CommonUtil.Runmode_is(Unknown Source)\r\n\tat ✽.Given Runmode is \"N\"(1Login.feature:9)\r\n",
+              "status": "pending"
+            },
+            "line": 9,
+            "name": "Runmode is \"N\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "N",
+                  "offset": 12
+                }
+              ],
+              "location": "CommonUtil.Runmode_is(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "Open \"Mozilla\" and go to \"testSitebaseURL\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Mozilla",
+                  "offset": 6
+                },
+                {
+                  "val": "testSitebaseURL",
+                  "offset": 26
+                }
+              ],
+              "location": "Login_Step.Open_Browser_and_go_to_url(String,String,DataTable)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "rows": [
+              {
+                "cells": [
+                  "URL_Description",
+                  "URL"
+                ],
+                "line": 11
+              },
+              {
+                "cells": [
+                  "Prod",
+                  "https://www.google.com"
+                ],
+                "line": 12
+              },
+              {
+                "cells": [
+                  "Uat",
+                  "https://www.google.com"
+                ],
+                "line": 13
+              }
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 14,
+            "name": "I enter valid \"sakib@gmail.com\" and valid \"1234\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "sakib@gmail.com",
+                  "offset": 15
+                },
+                {
+                  "val": "1234",
+                  "offset": 43
+                }
+              ],
+              "location": "Login_Step.I_enter_valid_username_and_valid_password(String,String)"
+            },
+            "matchedColumns": [
+              2,
+              3
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 15,
+            "name": "I click on \"loginButton\" button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "loginButton",
+                  "offset": 12
+                }
+              ],
+              "location": "Login_Step.I_click_on_login_button(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 16,
+            "name": "Login should be \"Fail\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Fail",
+                  "offset": 17
+                }
+              ],
+              "location": "Login_Step.user_should_be_able_to_login_successfully(String)"
+            },
+            "matchedColumns": [
+              4
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 2,
+            "name": "@Login"
+          }
+        ]
+      },
+      {
+        "line": 21,
+        "name": "Test login with valid cred",
+        "description": "",
+        "id": "test-facebook-login;test-login-with-valid-cred;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 41845,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Login_Step.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 303173,
+              "error_message": "cucumber.api.PendingException: Skipping the test as Runmode is No\r\n\tat com.van.stepDefination.CommonUtil.Runmode_is(Unknown Source)\r\n\tat ✽.Given Runmode is \"N\"(1Login.feature:9)\r\n",
+              "status": "pending"
+            },
+            "line": 9,
+            "name": "Runmode is \"N\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "N",
+                  "offset": 12
+                }
+              ],
+              "location": "CommonUtil.Runmode_is(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "Open \"Mozilla\" and go to \"testSitebaseURL\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Mozilla",
+                  "offset": 6
+                },
+                {
+                  "val": "testSitebaseURL",
+                  "offset": 26
+                }
+              ],
+              "location": "Login_Step.Open_Browser_and_go_to_url(String,String,DataTable)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "rows": [
+              {
+                "cells": [
+                  "URL_Description",
+                  "URL"
+                ],
+                "line": 11
+              },
+              {
+                "cells": [
+                  "Prod",
+                  "https://www.google.com"
+                ],
+                "line": 12
+              },
+              {
+                "cells": [
+                  "Uat",
+                  "https://www.google.com"
+                ],
+                "line": 13
+              }
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 14,
+            "name": "I enter valid \"zerin@gmail.com\" and valid \"12345555\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "zerin@gmail.com",
+                  "offset": 15
+                },
+                {
+                  "val": "12345555",
+                  "offset": 43
+                }
+              ],
+              "location": "Login_Step.I_enter_valid_username_and_valid_password(String,String)"
+            },
+            "matchedColumns": [
+              2,
+              3
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 15,
+            "name": "I click on \"loginButton\" button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "loginButton",
+                  "offset": 12
+                }
+              ],
+              "location": "Login_Step.I_click_on_login_button(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 16,
+            "name": "Login should be \"Success\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Success",
+                  "offset": 17
+                }
+              ],
+              "location": "Login_Step.user_should_be_able_to_login_successfully(String)"
+            },
+            "matchedColumns": [
+              4
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 2,
+            "name": "@Login"
+          }
+        ]
+      },
+      {
+        "line": 22,
+        "name": "Test login with valid cred",
+        "description": "",
+        "id": "test-facebook-login;test-login-with-valid-cred;;4",
+        "after": [
+          {
+            "result": {
+              "duration": 26844,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Login_Step.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 91189,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Runmode is \"Y\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Y",
+                  "offset": 12
+                }
+              ],
+              "location": "CommonUtil.Runmode_is(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 10424594249,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Open \"Mozilla\" and go to \"testSitebaseURL\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Mozilla",
+                  "offset": 6
+                },
+                {
+                  "val": "testSitebaseURL",
+                  "offset": 26
+                }
+              ],
+              "location": "Login_Step.Open_Browser_and_go_to_url(String,String,DataTable)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "rows": [
+              {
+                "cells": [
+                  "URL_Description",
+                  "URL"
+                ],
+                "line": 11
+              },
+              {
+                "cells": [
+                  "Prod",
+                  "https://www.google.com"
+                ],
+                "line": 12
+              },
+              {
+                "cells": [
+                  "Uat",
+                  "https://www.google.com"
+                ],
+                "line": 13
+              }
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2159355630,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "I enter valid \"seleniumsakib@gmail.com\" and valid \"sakib1234\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "seleniumsakib@gmail.com",
+                  "offset": 15
+                },
+                {
+                  "val": "sakib1234",
+                  "offset": 51
+                }
+              ],
+              "location": "Login_Step.I_enter_valid_username_and_valid_password(String,String)"
+            },
+            "matchedColumns": [
+              2,
+              3
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2556066196,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "I click on \"loginButton\" button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "loginButton",
+                  "offset": 12
+                }
+              ],
+              "location": "Login_Step.I_click_on_login_button(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 908290377,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "Login should be \"Success\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Success",
+                  "offset": 17
+                }
+              ],
+              "location": "Login_Step.user_should_be_able_to_login_successfully(String)"
+            },
+            "matchedColumns": [
+              4
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 2,
+            "name": "@Login"
+          }
+        ]
+      }
+    ],
+    "name": "Test Facebook Login",
+    "description": "In order to work \nAs a user\nI want to login",
+    "id": "test-facebook-login",
+    "keyword": "Feature",
+    "uri": "1Login.feature",
+    "tags": [
+      {
+        "line": 2,
+        "name": "@Login"
+      }
+    ]
+  },
+  {
+    "comments": [
+      {
+        "line": 1,
+        "value": "#Author: your.email@your.domain.com"
+      }
+    ],
+    "line": 3,
+    "elements": [
+      {
+        "line": 5,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1053810158,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I am logged in facebook with Mozilla",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Mozilla",
+                  "offset": 29
+                }
+              ],
+              "location": "CommonUtil.i_am_logged_in_facebook_with(String)"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 14,
+        "name": "Test profile and home button",
+        "description": "",
+        "id": "home-page-test;test-profile-and-home-button;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 37502,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Login_Step.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 59003980,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "\"profilelink\" should be present",
+            "match": {
+              "arguments": [
+                {
+                  "val": "profilelink",
+                  "offset": 1
+                }
+              ],
+              "location": "CommonUtil.should_be_present(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 2,
+            "name": "@HomePage"
+          },
+          {
+            "line": 8,
+            "name": "@HomePageButtonTest"
+          }
+        ]
+      },
+      {
+        "line": 5,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 78225503,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I am logged in facebook with Mozilla",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Mozilla",
+                  "offset": 29
+                }
+              ],
+              "location": "CommonUtil.i_am_logged_in_facebook_with(String)"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 15,
+        "name": "Test profile and home button",
+        "description": "",
+        "id": "home-page-test;test-profile-and-home-button;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 42634,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Login_Step.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 49678233,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "\"homelink\" should be present",
+            "match": {
+              "arguments": [
+                {
+                  "val": "homelink",
+                  "offset": 1
+                }
+              ],
+              "location": "CommonUtil.should_be_present(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 2,
+            "name": "@HomePage"
+          },
+          {
+            "line": 8,
+            "name": "@HomePageButtonTest"
+          }
+        ]
+      },
+      {
+        "line": 5,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 132934523,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I am logged in facebook with Mozilla",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Mozilla",
+                  "offset": 29
+                }
+              ],
+              "location": "CommonUtil.i_am_logged_in_facebook_with(String)"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 18,
+        "name": "Test title",
+        "description": "",
+        "id": "home-page-test;test-title",
+        "after": [
+          {
+            "result": {
+              "duration": 47766,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Login_Step.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 21420321,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "title should be \"Facebook\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Facebook",
+                  "offset": 17
+                }
+              ],
+              "location": "HomePage_Step.title_should_be(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 17,
+            "name": "@HomePageTitleTest"
+          }
+        ]
+      }
+    ],
+    "name": "Home Page Test",
+    "description": "",
+    "id": "home-page-test",
+    "keyword": "Feature",
+    "uri": "2HomePage.feature",
+    "tags": [
+      {
+        "line": 2,
+        "name": "@HomePage"
+      }
+    ]
+  }
+]
