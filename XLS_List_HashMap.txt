@@ -1,0 +1,69 @@
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.LinkedHashMap;
+import java.util.List;
+import java.util.Map;
+
+
+public class XLS_List_HashMap {
+
+	
+	
+	public static void main(String[] args) {
+
+		
+		String path = "C:\\Users\\SakibHasan\\workspace\\New horizon\\csrcall.xlsx";
+		String sheetname = "Sheet1";
+		List<Map<String, String>> li = getXlsTable(path,sheetname);
+		
+		for(int i=0;i<li.size();i++)
+		{
+			System.out.println(li.get(i).get("DNIS"));
+		}
+		
+		
+	}
+
+	
+	
+	public static List<Map<String, String>> getXlsTable(String xlsPath , String xlsSheetName)
+	{
+		
+		try{
+			Xls_Reader xls = new Xls_Reader(xlsPath);
+			
+			//System.out.println(xls.getColumnCount(""));
+			 
+			List<String> columns = new ArrayList<String>(xls.getColumnCount(xlsSheetName));
+			    for(int i = 0; i < xls.getColumnCount(xlsSheetName); i++){
+			        columns.add(xls.getCellData(xlsSheetName, i, 1));
+			    	//System.out.println(xls.getCellData("Sheet1", i, 1));
+			    }
+			    
+			   /* for(int i=0;i<columns.size();i++)
+			    {
+			    	System.out.println(columns.get(i));
+			    }*/    
+			    
+			    
+			List<Map<String,String>> data = new ArrayList<Map<String,String>>();
+			for(int rowNum=2;rowNum<=xls.getRowCount(xlsSheetName);rowNum++)
+			{
+				Map<String,String> row = new LinkedHashMap<String, String>(columns.size());
+				for(int colNum=0;colNum<xls.getColumnCount(xlsSheetName);colNum++)
+				{
+					row.put(columns.get(colNum), xls.getCellData(xlsSheetName, colNum, rowNum));
+					//System.out.print(xls.getCellData("Sheet1", colNum, rowNum)+"  ");
+				}
+				//System.out.println();
+				data.add(row);
+			}
+			return data;
+		}catch(Throwable t)
+		{
+			return null;
+		}
+		
+	}
+	
+}
