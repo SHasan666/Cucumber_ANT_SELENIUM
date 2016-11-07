@@ -1,0 +1,99 @@
+Intro
+
+ExtentMerge is a console application that merges multiple HTML files and information from Extent.db (database) file into a single trend report.
+
+Minimum version of reports you can merge is ExtentReports is 2.10. ExtentReports 2.05 and lower are not supported by this tool.
+
+Current Version
+
+0.1-alpha
+
+Sample
+
+Here is a demo sample: linky.
+
+Contributors
+
+Moni Mau for providing valuable feedback for the design and components and also for helping test all the initial (alpha) releases.
+
+Screenshots
+
+
+Usage
+
+Below are the options used by ExtentMerge:
+
+
+  Options:
+    -h, --help
+       Help
+    -v, --version
+       Version
+       Default: 0.1
+    -css
+       Inline css
+    -css-file
+       Path to custom CSS file
+    -db
+       Extent generated Sqlite database
+    -dir
+       Directory where Extent HTML files are placed
+    -from
+       Date to begin collecting data (Format: 'yyyy-MM-dd hh:mm:ss')
+    -html
+       Extent generated HTML file
+    -js
+       Inline js
+    -js-file
+       Path to custom JavaScript file
+  * -out
+       Output file path with .html extension
+    -to
+       Date to end collecting data (Format: 'yyyy-MM-dd hh:mm:ss')
+Directory
+
+ExtentMerge can consume an entire directory and scan for all resources that are valid Extent.html or Extent.db. To use a directory as input, use the below command:
+
+
+java -jar extentmerge.jar -dir "C:\MyDirectory" -out "C:\MyDirectory\ExtentMerge.html"
+HTML File
+
+To merge multiple HTML files, use the below command:
+
+
+java -jar extentmerge.jar -html "C:\MyDirectory\Report1.html" -html "C:\MyDirectory\Report2.html" -out "C:\MyDirectory\ExtentMerge.html"
+Database
+
+To merge one or many databases, use the below command:
+
+
+java -jar extentmerge.jar -db "C:\MyDirectory\Extent.db" -out "C:\MyDirectory\ExtentMerge.html"
+Merging Reports Between 2 Dates
+
+To merge reports from any source between multiple dates, simply specify the start-date and end-date. Note: you must use the following format for dates: "yyyy-MM-dd HH:mm:ss".
+
+
+java -jar extentmerge.jar -dir "locataion" -out "extent.html" -from "2015-10-02 00:00:00" -to "2015-10-05 23:59:59"
+Multiple Sources
+
+It is possible to use multiple input sources as well. ExtentMerge will scan all resources for valid information to build the merged report.
+
+
+java -jar extentmerge.jar -dir "location" -html "input.html" -db "extent.db" -out "extent.html"
+Customization
+
+It is also possible to customize the final report with your custom CSS and JS.
+
+
+// custom css file
+java -jar extentmerge.jar -dir "location" -out "extent.html" -css-file "css.css"
+
+// custom inline css
+java -jar extentmerge.jar -dir "location" -out "extent.html" -css ".tag { display: none; }"
+
+// custom js file
+java -jar extentmerge.jar -dir "location" -out "extent.html" -js-file "script.js"
+
+// custom inline js
+java -jar extentmerge.jar -dir "location" -out "extent.html" -js "$(document).ready(function() { alert('hello world'); });"
+
